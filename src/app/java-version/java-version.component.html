@@ -1,8 +1,27 @@
-<h1>Java 8</h1>
+<h3>Java 8</h3>
+<ul>
+  <li *ngFor="let product of products">
+    <p>{{product.id}}</p>
+    <h1>{{product.name}}</h1>
+    <h2>{{product.description}}</h2>
+    <h5>{{product.price}}</h5>
+  </li>
+</ul>
+<h4>Streams</h4>
+<mat-card appearance="outlined">
+  <mat-card-content>
+    {{ forLoop }}
+  </mat-card-content>
+</mat-card>
+to
+<mat-card appearance="outlined">
+  <mat-card-content>
+    {{ stream }}
+  </mat-card-content>
+</mat-card>
+<p>optional</p>
 <p>lambda</p>
 <p>Method Reference</p>
-<p>stream</p>
-<p>optional</p>
 <p>functional interfaces</p>
 <p>interfaces Default Methods</p>
 <p>time API</p>
