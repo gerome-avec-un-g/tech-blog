@@ -1,0 +1,201 @@
+[
+  {
+    "version": "Java 8",
+    "features": [
+      {
+        "name": "Streams",
+        "description": "replace <em>for loops</em>",
+        "before": "    public List<Book> booksWithAtLeastNumberOfPages(List<Book> allBooks, int minimumPageCount) {\n        List<Book> booksWithAtLeastNumberOfPages = new ArrayList<>();\n        for (Book book : allBooks) {\n            if (book.getPageCount() >= minimumPageCount) {\n                booksWithAtLeastNumberOfPages.add(book);\n            }\n        }\n        return booksWithAtLeastNumberOfPages;\n    }",
+        "after": "    public List<Book> booksWithAtLeastNumberOfPagesStream(List<Book> allBooks, int minimumPageCount) {\n        return allBooks.stream()\n                .filter(book -> book.getPageCount() >= minimumPageCount)\n                .toList();\n    }"
+      },
+      {
+        "name": "Optional",
+        "description": "force optional check",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Lambda",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Method Reference",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "functional interfaces",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "interfaces Default Methods",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "time API",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 9",
+    "features": [
+      {
+        "name": "Java Module System",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Try-with-resources",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Private Interface Methods",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 10",
+    "features": [
+      {
+        "name": "Local Variable Type Inference",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 11",
+    "features": [
+      {
+        "name": "Local Variable Type Inference in Lambda",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 12",
+    "features": [
+      {
+        "name": "String Indent and Transform",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Files Mismatch",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 13",
+    "features": [
+      {
+        "name": "TextBlocks",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 14",
+    "features": [
+      {
+        "name": "Yield Keyword",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 15",
+    "features": [
+      {
+        "name": "Garbage Collector Updates",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 16",
+    "features": [
+      {
+        "name": "Pattern Matching for instanceof",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Records",
+        "description": "doesn't work for Hibernate @Entity",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 17",
+    "features": [
+      {
+        "name": "Sealed Class",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "version": "Java 21",
+    "features": [
+      {
+        "name": "Virtual Threads",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Sequenced Collections",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "String Templates",
+        "description": "",
+        "before": "",
+        "after": ""
+      },
+      {
+        "name": "Record Patterns",
+        "description": "",
+        "before": "",
+        "after": ""
+      }
+    ]
+  }
+]

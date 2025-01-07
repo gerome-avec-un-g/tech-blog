@@ -1,69 +1,26 @@
-<h3>Java 8</h3>
 <ul>
-  <li *ngFor="let product of products">
-    <p>{{product.id}}</p>
-    <h1>{{product.name}}</h1>
-    <h2>{{product.description}}</h2>
-    <h5>{{product.price}}</h5>
+  <li *ngFor="let javaVersion of javaVersions">
+    <h3>{{ javaVersion.version }}</h3>
+    <ul>
+      <li *ngFor="let feature of javaVersion.features">
+        <h4>{{ feature.name }}</h4>
+        <p>{{ feature.description }}</p>
+        <p>Before</p>
+        <mat-card appearance="outlined">
+          <mat-card-content>
+              <pre [innerHTML]="toHtml(feature.before)"></pre>
+          </mat-card-content>
+        </mat-card>
+        <p>After</p>
+        <mat-card appearance="outlined">
+          <mat-card-content>
+              <pre [innerHTML]="toHtml(feature.after)"></pre>
+          </mat-card-content>
+        </mat-card>
+      </li>
+    </ul>
   </li>
 </ul>
-<h4>Streams</h4>
-<mat-card appearance="outlined">
-  <mat-card-content>
-    {{ forLoop }}
-  </mat-card-content>
-</mat-card>
-to
-<mat-card appearance="outlined">
-  <mat-card-content>
-    {{ stream }}
-  </mat-card-content>
-</mat-card>
-<p>optional</p>
-<p>lambda</p>
-<p>Method Reference</p>
-<p>functional interfaces</p>
-<p>interfaces Default Methods</p>
-<p>time API</p>
-
-<h1>Java 9</h1>
-<p>Java Module System</p>
-<p>Try-with-resources</p>
-<p>Private Interface Methods</p>
-
-<h1>Java 10</h1>
-<p>Local Variable Type Inference</p>
-
-<h1>Java 11</h1>
-<p>Local Variable Type Inference  in Lambda</p>
-
-<h1>Java 12</h1>
-<p>String Indent and Transform</p>
-<p>Files Mismatch</p>
-
-<h1>Java 13</h1>
-<p>TextBlocks</p>
-
-<h1>Java 14</h1>
-<p>Yield Keyword</p>
-
-<h1>Java 15</h1>
-<p>Garbage Collector Updates</p>
-
-<h1>Java 16</h1>
-<p>Pattern Matching for instanceof</p>
-<p>Records</p>
-
-<h1>Java 17</h1>
-<p>Sealed Class</p>
-
-<h1>Java 21</h1>
-<p>Virtual Threads</p>
-<p>Sequenced Collections</p>
-<p>String Templates</p>
-<p>Record Patterns</p>
-
-
 
 ??? remove jfx
 micro bench
